@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .botao-download{
+        @apply flex items-center m-2 rounded-lg;
+    }
+
+    .icones {
+        @apply text-6xl mb-4 text-cor2 hover:text-cor3;
+    }
+    .h2-div-icones{
+        @apply font-medium mb-3 text-xl lg:text-3xl;
+    }
+
+    .h3-carrosel{
+        @apply text-white my-6 px-3 text-lg lg:ml-5 lg:text-3xl lg:max-w-[28.75rem];
+    }
+    .imagens-carrosel{
+        @apply absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-1/2  lg:inline-block lg:static lg:translate-x-0 lg:translate-y-0 md:max-h-[24.375rem];
+    }
+    .div-carrosel-lg{
+        @apply lg:flex lg:justify-center lg:items-center lg:w-[70%] lg:m-auto lg:absolute lg:-translate-x-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:left-1/2;
+    }
+    
+    .div-planos{
+        @apply text-center w-[70%] mx-auto border-solid border text-cor1 rounded-lg overflow-hidden shadow-md max-w-[25rem] lg:w-[90%];
+    }
+    .h2-div-planos{
+        @apply bg-cor3 text-white text-xl p-2 lg:text-3xl;
+    }
+    .botao-planos-pagos{
+        @apply border-solid border border-black py-3 w-full rounded-lg hover:bg-cor2 hover:text-white hover:shadow-[0_0_2px_2px_rgba(77,54,54,0.452)];
+    }
+}
